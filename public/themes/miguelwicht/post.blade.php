@@ -17,7 +17,7 @@
                                     <td class="min-width">Date:</td>
                                     <td>{{ date("M/d/Y", strtotime($post->publish_date)) }}</td>
                                 </tr>
-                                @if($post->tags->first()->tag != '')
+                                @if(count($post->tags))
                                 <tr>
                                     <td class="min-width">Tags:</td>
                                     <td>
