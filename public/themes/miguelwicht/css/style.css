@@ -446,5 +446,7 @@ Media Query specific styles
     border-bottom: none;
   }
 
-
+  .navbar-collapse.in .navbar-nav {
+    margin-bottom: 0px;
+  }
 }
