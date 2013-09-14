@@ -1,21 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans:400,700,600);
 
-@media (min-width: 1200px)  {
-  .container {
-    max-width: 970px;
-  }
-}
-
-@media (max-width: 767px)  {
-  .navbar-nav>li {
-    border-bottom: 1px solid #eaeaea;
-  }
-
-  .navbar-nav>li:last-child {
-    border-bottom: none;
-  }
-}
-
 body {
   font-family: "Open Sans", Arial, sans-serif;
   color: #222222;
@@ -434,4 +418,33 @@ pre .chunk {
 
 pre .tex .formula {
   opacity: 0.5;
+}
+
+/*
+Media Query specific styles
+*/
+@media (min-width: 1200px)  {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 767px)  {
+  body {
+    padding-top: 0px;
+  }
+
+  .navbar-fixed-top {
+    position: static;
+  }
+
+  .navbar-nav>li {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .navbar-nav>li:last-child {
+    border-bottom: none;
+  }
+
+
 }
