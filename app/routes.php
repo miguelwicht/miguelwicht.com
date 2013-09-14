@@ -1,6 +1,14 @@
 <?php
 
 /*
+|--------------------------------------------
+|  Interface repository binding
+|--------------------------------------------
+*/
+App::bind('ProjectRepositoryInterface', 'EloquentProjectRepository');
+App::bind('BaseValidatorRepositoryInterface', 'BaseValidatorRepository');
+
+/*
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
@@ -22,3 +30,5 @@ Route::group(array('prefix' => 'install'), function()
 	Route::get('config', array('uses' => 'InstallController@editConfig', 'as' => 'wardrobe.install.editConfig'));
 	Route::post('config', array('uses' => 'InstallController@updateConfig', 'as' => 'wardrobe.install.updateConfig'));
 });
+
+Route::resource('projects', 'ProjectsController', array('only' => array('index')));

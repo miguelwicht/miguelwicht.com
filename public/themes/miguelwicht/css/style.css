@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans:400,700,600);
+
+@media (min-width: 1200px)  {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 767px)  {
+  .navbar-nav>li {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .navbar-nav>li:last-child {
+    border-bottom: none;
+  }
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #222222;
+  padding-top: 70px;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+a:hover {
+  color: #2795b6;
+}
+
+.navbar-inverse {
+  background-color: #f6f6f6;
+  border-color: #eaeaea;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  color: #005580;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #005580;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #999999;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #005580;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  color: #999999;
+  background-color: #999999;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  color: #2ba6cb;
+  border-bottom: 1px solid #2ba6cb;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #2ba6cb;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+  color: #ffffff;
+  background-color: #2795b6;
+  border-color: #2795b6;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px;
+  padding: 0 0 100px;
+}
+
+.project {
+  margin-bottom: 70px;
+}
+
+.table ul.tags {
+  margin-bottom: 0px;
+}
+
+.table .min-width {
+  width: 1px;
+  padding-left: 0px;
+  font-weight: 600;
+}
+
+.project .table {
+  margin-bottom: 0px;
+}
+
+.project iframe {
+  margin-top: 20px;
+}
+
+h2.title {
+  color: #232323;
+  margin: 30px 0;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1em;
+  letter-spacing: -1px;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3em;
+  color: #666;
+}
+
+ul.tags {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+ul.tags li {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #efefef;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+ul.archive {
+  margin: 0;
+  padding: 0;
+}
+ul.archive li {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #666;
+}
+ul.archive li span {
+  float: right;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #ccc;
+}
+
+.post {
+  margin-top: 40px;
+  /*border-bottom: 1px solid #eaeaea;*/
+  padding-bottom: 20px;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post p {
+  text-align: justify;
+}
+.post blockquote {
+  font-style: italic;
+}
+.post h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+.post .date {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.post img {
+  max-width: 100%;
+}
+
+.project .carousel {
+  margin-top: 30px;
+}
+
+.carousel-indicators {
+  bottom: -45px;
+  /*border-color: #000;*/
+}
+
+.carousel-indicators li {
+  background-color: #2ba6cb;
+  opacity: 0.4;
+  border-color: #2ba6cb;
+}
+
+.carousel-indicators .active {
+  border-color: #2795b6;
+  background-color: #2795b6;
+  opacity: 1.0;
+}
+
+.carousel-caption {
+/*  display: none;*/
+  background-color: rgba(0,0,0,0.5);
+}
+
+.carousel:hover .carousel-caption {
+  display: block;
+}
+
+.carousel-caption {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+}
+
+.carousel-caption p {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 50px;
+  width: 30px;
+  height: 50px;
+  margin-top: -50px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  border-bottom: 1px solid #dddddd;
+}
+
+.container .jumbotron {
+  border-radius: 0px;
+}
+
+.table td.no-padding-left {
+  padding-left: 0px;
+}
+
+.table td.no-padding-right {
+  padding-right: 0px;
+}
+
+#footer {
+  height:100px;
+}
+
+footer {
+  /*margin-top: 20px;*/
+  border-top: 1px solid #eaeaea;
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+/*
+CODE STYLES
+*/
+
+pre code {
+  display: block;
+  padding: .5em;
+  color: #000;
+  background: #f8f8ff;
+  font-family: Inconsolata,Monaco,"Lucida Console",monospace;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0;
+  white-space: pre;
+}
+pre {
+  border: 1px solid #d0d0d0;
+  color: #002166;
+  display: block;
+  margin: 14px 0 14px 0;
+  padding: 0;
+  background: none repeat scroll 0 0 #EEE;
+  border: 1px solid #DDD;
+  clear: both;
+  overflow: auto;
+}
+
+pre code {
+  display: block; padding: 0.5em;
+  color: #000;
+  background: #f8f8ff
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .lisp .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #000;
+  font-weight: bold
+}
+
+pre .number,
+pre .hexcolor {
+  color: #40a070
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id {
+  color: #900;
+  font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .instancevar,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+  font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .ruby .symbol .keyword,
+pre .ruby .symbol .keymethods,
+pre .lisp .keyword,
+pre .tex .special,
+pre .input_number {
+  color: #990073
+}
+
+pre .builtin,
+pre .built_in,
+pre .lisp .title {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
+}
+
+pre .tex .formula {
+  opacity: 0.5;
+}

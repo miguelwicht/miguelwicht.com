@@ -28,8 +28,9 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'local' => array('localhost'),
 	'dev' => array('wardrobe-core.dev'),
+    'production' => array('*.com','*.de'),
 
 ));
 
