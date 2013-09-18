@@ -34,3 +34,5 @@ Route::get('/posts', function()
     Wardrobe::setupViews();
     return View::make(theme_view('posts'));
 });
+
+Route::get('posts/{slug}', array('uses' => $wardrobeControllers.'PostController@show', 'as' => 'wardrobe.posts.show'));

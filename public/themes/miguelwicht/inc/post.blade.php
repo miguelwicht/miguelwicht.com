@@ -1,5 +1,5 @@
 <div class="post">
-    <h1><a href="{{ wardrobe_url('post/'.$post->slug) }}">{{ $post->title }}</a></h1>
+    <h1><a href="{{ wardrobe_url('posts/'.$post->slug) }}">{{ $post->title }}</a></h1>
     <div class="row">
         <div class="col-lg-12">
             <table class="table">
