@@ -24,7 +24,7 @@
                     <table class="table">
                     @foreach ($posts as $post)
                     <tr>
-                        <td class="no-padding-left"><a href="{{ wardrobe_url('post/'.$post->slug) }}">{{ $post->title }}</a></td>
+                        <td class="no-padding-left"><a href="{{ wardrobe_url('posts/'.$post->slug) }}">{{ $post->title }}</a></td>
                         <td class="no-padding-right text-right hidden-xs">{{ date("M/d/Y", strtotime($post->publish_date)) }}</td>
                     </tr>
                     @endforeach
