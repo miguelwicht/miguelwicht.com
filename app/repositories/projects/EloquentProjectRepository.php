@@ -17,6 +17,13 @@ class EloquentProjectRepository extends EloquentBaseRepository implements Projec
         parent::__construct($model, $validator);
     }
 
+    public function findBySlug($slug)
+    {
+        $project = $this->model->where('slug', '=', $slug)->first();
+
+        return $project;
+    }
+
     /**
      * Update the specified project
      *

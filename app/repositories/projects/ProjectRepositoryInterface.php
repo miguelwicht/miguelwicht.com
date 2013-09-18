@@ -5,5 +5,5 @@
  */
 interface ProjectRepositoryInterface extends BaseRepositoryInterface
 {
-
+    public function findBySlug($slug);
 }

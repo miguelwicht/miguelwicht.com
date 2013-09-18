@@ -31,4 +31,4 @@ Route::group(array('prefix' => 'install'), function()
 	Route::post('config', array('uses' => 'InstallController@updateConfig', 'as' => 'wardrobe.install.updateConfig'));
 });
 
-Route::resource('projects', 'ProjectsController', array('only' => array('index')));
+Route::resource('projects', 'ProjectsController', array('only' => array('index', 'show')));

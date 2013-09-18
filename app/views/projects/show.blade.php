@@ -4,9 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                @foreach($projects as $project)
-                    @include('projects.inc.project')
-                @endforeach
+                @include('projects.inc.project')
             </div>
         </div>
     </div>

@@ -59,12 +59,13 @@ class ProjectsController extends BaseController {
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $slug
      * @return Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $project = $this->projects->findById($id);
+        Wardrobe::setupViews();
+        $project = $this->projects->findBySlug($slug);
 
         return View::make('projects.show', compact('project'));
     }
