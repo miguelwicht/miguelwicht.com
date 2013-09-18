@@ -1,5 +1,10 @@
 <div class="post">
-    <h1><a href="{{ wardrobe_url('posts/'.$post->slug) }}">{{ $post->title }}</a></h1>
+    @if(Request::is('posts'))
+        <h2><a href="{{ wardrobe_url('posts/'.$post->slug) }}">{{ $post->title }}</a></h2>
+    @elseif(Request::is('posts*'))
+        <h1>{{ $post->title }}</h1>
+    @endif
+
     <div class="row">
         <div class="col-lg-12">
             <table class="table">
