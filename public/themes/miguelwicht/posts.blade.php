@@ -9,7 +9,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <?php $posts = Wardrobe::posts(); ?>
+                    <?php
+                      $postRepository = new Wardrobe\Core\Repositories\DbPostRepository();
+                      $posts = $postRepository->active(Config::get('core::wardrobe.per_page')); ?>
                     @foreach ($posts as $post)
                         @include(theme_view('inc.post'))
                     @endforeach
