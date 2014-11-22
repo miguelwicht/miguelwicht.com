@@ -10,7 +10,7 @@ return array(
 	| application. If disabled, a simple generic error page is shown.
 	|
 	*/
-	'debug' => false,
+	'debug' => getenv('DEBUG'),
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -65,7 +65,7 @@ return array(
 	| will not be safe. Please do this before deploying an application!
 	|
 	*/
-	'key' => 'YbezitZ1Xj6uKRd9gWpule7Oc7rJg4E8',
+	'key' => getenv('ENCRYPTION_KEY'),
 	'cipher' => MCRYPT_RIJNDAEL_128,
 	/*
 	|--------------------------------------------------------------------------

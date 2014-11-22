@@ -6,3 +6,5 @@ composer.phar
 /app/config/production
 /app/config/packages/wardrobe/core/production
 /app/config/packages/wardrobe/core/local
+.env.local.php
+.env.production.php

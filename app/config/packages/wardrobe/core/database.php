@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'default' => 'default',
+	'default' => 'mysql',
 
 	'connections' => array(
 
@@ -13,10 +13,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'wardrobe',
-			'username'  => 'root',
-			'password'  => 'root',
+			'host'      => getenv('WARDROBE_DB_HOST'),
+			'database'  => getenv('WARDROBE_DB_NAME'),
+			'username'  => getenv('WARDROBE_DB_USER'),
+			'password'  => getenv('WARDROBE_DB_PASSWORD'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
